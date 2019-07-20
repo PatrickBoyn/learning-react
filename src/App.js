@@ -34,7 +34,7 @@ class App extends Component {
         </Person>
         <Person
           name={this.state.people[2].name}
-          age={this.state.peopel[2].age}
+          age={this.state.people[2].age}
         />
       </div>
     );
