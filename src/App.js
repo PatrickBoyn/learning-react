@@ -20,8 +20,8 @@ class App extends Component {
     ]
   };
 
-  switchNameHandler = e => {
-    console.log(`${e.target} was clicked.`);
+  switchNameHandler = () => {
+    console.log(`Button was clicked.`);
   };
 
   render() {
