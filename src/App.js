@@ -44,13 +44,13 @@ class App extends Component {
       <div className="App">
         <h1>Hello world from React!</h1>
         <p>This is really working!</p>
-        <button onClick={this.switchNameHandler}>Switch Name</button>
+        <button onClick={this.switchNameHandler.bind(this, 'Jenna')}>Switch Name</button>
         <Person
           name={this.state.people[0].name}
           age={this.state.people[0].age}
         />
         <Person
-          click={this.switchNameHandler}
+          click={this.switchNameHandler.bind(this, 'Allen')}
           name={this.state.people[1].name}
           age={this.state.people[1].age}>
           Hobbies: violin
