@@ -39,6 +39,25 @@ class App extends Component {
     });
   };
 
+  nameChangeHandler = event => {
+    this.setState({
+      people: [
+        {
+          name: 'Patrick',
+          age: 38
+        },
+        {
+          name: event.target.value,
+          age: 25
+        },
+        {
+          name: 'Jane',
+          age: 21
+        }
+      ]
+    });
+  };
+
   render() {
     return (
       <div className="App">
