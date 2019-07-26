@@ -97,7 +97,8 @@ class App extends Component {
               age={this.state.people[2].age}
             />
           </div>
-        ) : null}
+        ) : // Else renders nothing.
+        null}
       </div>
     );
   }
