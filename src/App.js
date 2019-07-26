@@ -80,18 +80,6 @@ class App extends Component {
 
     if (this.state.showPeople) {
       people = (
-        
-      );
-    }
-
-    return (
-      <div className="App">
-        <h1>Hello world from React!</h1>
-        <p>This is really working!</p>
-        {/* This can be inefficient. */}
-        <button style={style} onClick={this.togglePeopleHandler}>
-          Switch Name
-        </button>
         <div>
           <Person
             name={this.state.people[0].name}
@@ -109,6 +97,17 @@ class App extends Component {
             age={this.state.people[2].age}
           />
         </div>
+      );
+    }
+
+    return (
+      <div className="App">
+        <h1>Hello world from React!</h1>
+        <p>This is really working!</p>
+        {/* This can be inefficient. */}
+        <button style={style} onClick={this.togglePeopleHandler}>
+          Switch Name
+        </button>
       </div>
     );
   }
