@@ -108,6 +108,7 @@ class App extends Component {
         <button style={style} onClick={this.togglePeopleHandler}>
           Switch Name
         </button>
+        {people}
       </div>
     );
   }
