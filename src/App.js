@@ -18,6 +18,7 @@ class App extends Component {
         age: 29,
       },
     ],
+    showPeople: false,
   };
 
   switchNameHandler = newName => {
