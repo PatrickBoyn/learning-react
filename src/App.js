@@ -79,7 +79,7 @@ class App extends Component {
         <button style={style} onClick={this.togglePersonsHandler}>
           Switch Name
         </button>
-        {
+        {this.state.showPeople ? (
           <div>
             <Person
               name={this.state.people[0].name}
@@ -97,7 +97,7 @@ class App extends Component {
               age={this.state.people[2].age}
             />
           </div>
-        }
+        ) : null}
       </div>
     );
   }
