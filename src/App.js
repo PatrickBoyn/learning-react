@@ -106,7 +106,7 @@ class App extends Component {
         <p>This is really working!</p>
         {/* This can be inefficient. */}
         <button style={style} onClick={this.togglePeopleHandler}>
-          Switch Name
+          Show people
         </button>
         {people}
       </div>
