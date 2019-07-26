@@ -60,7 +60,11 @@ class App extends Component {
   };
 
   // This is so that the this keyword refers to this particular method.
-  togglePersonHandler = () => {};
+  togglePersonHandler = () => {
+    const doesShow = this.state.showPeople;
+    // This is a toggle from true to false or vice versa.
+    this.setState({ showPeople: !doesShow });
+  };
 
   render() {
     const style = {
