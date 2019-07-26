@@ -82,7 +82,7 @@ class App extends Component {
       people = (
         <div>
           {this.state.people.map(person => {
-            return <Perosn name={person.name} age={person.age} />;
+            return <Person name={person.name} age={person.age} />;
           })}
         </div>
       );
