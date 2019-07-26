@@ -7,17 +7,17 @@ class App extends Component {
     people: [
       {
         name: 'Patrick',
-        age: 38
+        age: 38,
       },
       {
         name: 'John',
-        age: 25
+        age: 25,
       },
       {
         name: 'Jane',
-        age: 29
-      }
-    ]
+        age: 29,
+      },
+    ],
   };
 
   switchNameHandler = newName => {
@@ -25,36 +25,36 @@ class App extends Component {
       people: [
         {
           name: newName,
-          age: 38
+          age: 38,
         },
         {
           name: 'John',
-          age: 25
+          age: 25,
         },
         {
           name: 'Jane',
-          age: 21
-        }
-      ]
+          age: 21,
+        },
+      ],
     });
   };
 
-  nameChangeHandler = (event) => {
+  nameChangeHandler = event => {
     this.setState({
       people: [
         {
           name: 'Patrick',
-          age: 38
+          age: 38,
         },
         {
           name: event.target.value,
-          age: 25
+          age: 25,
         },
         {
           name: 'Jane',
-          age: 21
-        }
-      ]
+          age: 21,
+        },
+      ],
     });
   };
 
@@ -62,32 +62,36 @@ class App extends Component {
     const style = {
       backgroundColor: 'white',
       font: 'inherit',
-      border: '1px solid blue', 
+      border: '1px solid blue',
       borderRadius: '6px',
       padding: '8px',
-      cursor: 'pointer'
+      cursor: 'pointer',
     };
     return (
       <div className="App">
         <h1>Hello world from React!</h1>
         <p>This is really working!</p>
         {/* This can be inneficent. */}
-        <button 
-        style={style}
-        onClick={() => this.switchNameHandler('George')}>Switch Name</button>
-        <Person
-          name={this.state.people[0].name}
-          age={this.state.people[0].age}/>
-        <Person
-          click={this.switchNameHandler.bind(this, 'Allen')}
-          name={this.state.people[1].name}
-          age={this.state.people[1].age}
-          changed={this.nameChangeHandler}/>
+        <button style={style} onClick={this.togglePersonsHandler}>
+          Switch Name
+        </button>
+        <div>
+          <Person
+            name={this.state.people[0].name}
+            age={this.state.people[0].age}
+          />
+          <Person
+            click={this.switchNameHandler.bind(this, 'Allen')}
+            name={this.state.people[1].name}
+            age={this.state.people[1].age}
+            changed={this.nameChangeHandler}
+          />
           Hobbies: violin
-        <Person
-          name={this.state.people[2].name}
-          age={this.state.people[2].age}
-        />
+          <Person
+            name={this.state.people[2].name}
+            age={this.state.people[2].age}
+          />
+        </div>
       </div>
     );
   }
