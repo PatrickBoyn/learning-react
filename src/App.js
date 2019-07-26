@@ -40,7 +40,11 @@ class App extends Component {
     });
   };
 
-  deletePersonHandler = () => {};
+  deletePersonHandler = peopleIndex => {
+    const people = this.state.people;
+    people.splice(peopleIndex, 1);
+    this.setState({ people: people });
+  };
 
   // This is so that the this keyword refers to this particular method.
   togglePeopleHandler = () => {
