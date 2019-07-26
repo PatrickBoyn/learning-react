@@ -58,6 +58,7 @@ class App extends Component {
     });
   };
 
+  // This is so that the this keyword refers to this particular method.
   togglePersonHandler = () => {};
 
   render() {
