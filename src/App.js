@@ -63,6 +63,7 @@ class App extends Component {
       backgroundColor: 'white',
       font: 'inherit',
       border: '1px solid blue', 
+      borderRadius: '6px',
       padding: '8px'
     };
     return (
@@ -70,7 +71,9 @@ class App extends Component {
         <h1>Hello world from React!</h1>
         <p>This is really working!</p>
         {/* This can be inneficent. */}
-        <button onClick={() => this.switchNameHandler('George')}>Switch Name</button>
+        <button 
+        style={style}
+        onClick={() => this.switchNameHandler('George')}>Switch Name</button>
         <Person
           name={this.state.people[0].name}
           age={this.state.people[0].age}/>
