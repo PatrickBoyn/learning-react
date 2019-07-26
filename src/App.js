@@ -40,6 +40,8 @@ class App extends Component {
     });
   };
 
+  deletePersonHandler = () => {};
+
   // This is so that the this keyword refers to this particular method.
   togglePeopleHandler = () => {
     const doesShow = this.state.showPeople;
