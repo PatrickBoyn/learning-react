@@ -75,6 +75,15 @@ class App extends Component {
       padding: '8px',
       cursor: 'pointer',
     };
+
+    let people = null;
+
+    if (this.state.showPeople) {
+      people = (
+        
+      );
+    }
+
     return (
       <div className="App">
         <h1>Hello world from React!</h1>
