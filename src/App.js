@@ -79,7 +79,7 @@ class App extends Component {
       <div className="App">
         <h1>Hello world from React!</h1>
         <p>This is really working!</p>
-        {/* This can be inneficent. */}
+        {/* This can be inefficient. */}
         <button style={style} onClick={this.togglePersonsHandler}>
           Switch Name
         </button>
