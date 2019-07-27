@@ -85,7 +85,7 @@ class App extends Component {
 
       style.backgroundColor = 'red';
     }
-    let classes = ['red', 'bold'].join(' ');
+    let classes = [];
 
     return (
       <div className="App">
