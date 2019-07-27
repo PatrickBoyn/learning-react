@@ -3,14 +3,16 @@ import './Person.css';
 
 const person = props => {
   const style = {
-    '@media (min-width: 500px)': {},
+    '@media (min-width: 500px)': {
+      width: '450px',
+    },
   };
   const pStyle = {
     cursor: 'pointer',
   };
 
   return (
-    <div className="Person">
+    <div className="Person" style={style}>
       <p onClick={props.click} style={pStyle}>
         I'm {props.name} and I am {props.age} years old
       </p>
