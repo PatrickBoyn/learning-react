@@ -56,9 +56,9 @@ class App extends Component {
   render() {
     const style = {
       backgroundColor: 'green',
-      color:'white',
+      color: 'white',
       font: 'inherit',
-      border: '1px solid blue',
+      border: 'none',
       borderRadius: '6px',
       padding: '8px',
       cursor: 'pointer',
