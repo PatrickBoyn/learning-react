@@ -2,6 +2,9 @@ import React from 'react';
 import './Person.css';
 
 const person = props => {
+  const style = {
+    '@media (min-width: 500px)': {},
+  };
   const pStyle = {
     cursor: 'pointer',
   };
