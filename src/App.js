@@ -87,6 +87,14 @@ class App extends Component {
     }
     let classes = [];
 
+    if (this.state.people.length <= 2) {
+      classes.push('red');
+    }
+
+    if (this.state.people.legnth <= 1) {
+      classes.push('bold');
+    }
+
     return (
       <div className="App">
         <h1>Hello world from React!</h1>
