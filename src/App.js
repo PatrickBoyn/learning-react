@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classes from './App.css';
+import classes from './App.module.css';
 import Person from './Person/Person';
 
 class App extends Component {
@@ -96,9 +96,9 @@ class App extends Component {
     }
 
     return (
-      <div className={classes.App}>
+      <div className={assignedClasses.App}>
         <h1>Hello world from React!</h1>
-        <p className={classes.join(' ')}>This is really working!</p>
+        <p className={assignedClasses.join(' ')}>This is really working!</p>
         {/* This can be inefficient. */}
         <button style={style} onClick={this.togglePeopleHandler}>
           Show people
