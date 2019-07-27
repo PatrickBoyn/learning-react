@@ -29,6 +29,8 @@ class App extends Component {
       return p.id === id;
     });
 
+    const person = this.state.people[personIndex];
+
     this.setState({
       people: [
         {
