@@ -91,14 +91,14 @@ class App extends Component {
       classes.push('red');
     }
 
-    if (this.state.people.legnth <= 1) {
+    if (this.state.people.length <= 1) {
       classes.push('bold');
     }
 
     return (
       <div className="App">
         <h1>Hello world from React!</h1>
-        <p className={classes}>This is really working!</p>
+        <p className={classes.join(' ')}>This is really working!</p>
         {/* This can be inefficient. */}
         <button style={style} onClick={this.togglePeopleHandler}>
           Show people
